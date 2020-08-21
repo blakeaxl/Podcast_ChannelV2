@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="images/logo.svg" type="image/svg+xml">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Podcast Channel</title>
+</head>
+
+<body>
+    <main class="main_page">
+        <header class="header">
+            <img src="images/logo.svg" alt="Podcast channel logo" class="header_logo">
+                <input type="checkbox" id="check" class="hamburguer_checkbox">
+                <div class="hamburger_menu_container">
+                    <div class="hamburger_menu_line laneA"></div>
+                    <div class="hamburger_menu_line laneB"></div>
+                    <div class="hamburger_menu_line laneC"></div>
+                </div>
+                <nav class="header_nav_menu">
+                    <ul class="menu_list">
+                        <li><a href="#episodes" class="list_item">EPISODIOS</a></li>
+                        <li><a href="#we" class="list_item">NOSOTROS</a></li>
+                        <li><a href="#interview" class="list_item">ENTREVISTAS</a></li>
+                        <li><a href="#topics" class="list_item">TÓPICOS</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <header class="header_desktop">
+            <img src="images/logo.svg" alt="Podcast channel logo" class="desktop_header_logo">
+            <ul class="desktop_menu_list">
+                <li><a href="#episodes" class="desktop_list_item">EPISODIOS</a></li>
+                <li><a href="#we" class="desktop_list_item">NOSOTROS</a></li>
+                <li><a href="#interview" class="desktop_list_item">ENTREVISTAS</a></li>
+                <li><a href="#topics" class="desktop_list_item">TÓPICOS</a></li>
+            </ul>
+        </header>
+        <section class="home">
+            <h2 class="home_title">Hello <span>world</span> pale blue dot.</h2>
+            <p class="home_text">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves
+                cada 15 días.</p>
+            <a href="https://www.acamica.com" class="home_button">CONOCÉ MÁS</a>
+        </section>
+        <section class="episodes" id="episodes">
+            <h2 class="episodes_title">Episodios</h2>
+            <div class="episodes_podcast">
+                <div> <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
+                        allow="encrypted-media"></iframe></div>
+                <div> <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+                        allow="encrypted-media"></iframe></div>
+                <div> <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
+                        allow="encrypted-media"></iframe></div>
+                <div> <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+                        allow="encrypted-media"></iframe></div>
+            </div>
+        </section>
+        <section class="we" id="we">
+            <img src="images/phone.png" alt="phone" class="we_phone">
+            <h2 class="we_title">
+                De dónde venimos
+            </h2>
+            <p class="we_text">
+                Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
+                Universe, are challenged by this point of pale light.<br>
+                <br>
+                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+            </p>
+        </section>
+        <section class="interview" id="interview">
+            <h2 class="interview_title">Invitadas/os estelares</h2>
+            <div class="interview_images_container">
+                <img class="interview_img" src="images/grace-hopper.png" alt="grace hopper">
+                <img class="interview_img" src="images/Katie-Bouman.png" alt="katie bouman">
+                <img class="interview_img" src="images/Margaret_Hamilton.png" alt="margaret hamilton">
+                <img class="interview_img" src="images/computer1103.png" alt="univac 1103 computer">
+                <img class="interview_img" src="images/operations.png"
+                    alt="the world’s first programmable general-purpose computer">
+                <img class="interview_img" src="images/susan-kare.png" alt="susan kare">
+            </div>
+        </section>
+        <section class="topics" id="topics">
+            <h2 class="topics_title">Algunos de nuestros temas</h2>
+            <div class="topics_container">
+                <img src="images/icon1.svg" alt="icon1">
+                <p class="topics_container_text">Trabajo remoto</p>
+            </div>
+            <div class="topics_container">
+                <img src="images/icon2.svg" alt="icon2">
+                <p class="topics_container_text">Repensando la<br> programación</p>
+            </div>
+            <div class="topics_container">
+                <img src="images/icon3.svg" alt="icon3">
+                <p class="topics_container_text">Bases del código</p>
+            </div>
+            <div class="topics_container">
+                <img src="images/icon4.svg" alt="icon4">
+                <p class="topics_container_text">Seguridad informática</p>
+            </div>
+        </section>
+        <section class="news">
+            <h2 class="news_title">¿Querés las últimas novedades?</h2>
+            <a href="https://www.acamica.com" class="news_button">ESCUCHÁ LOS EPISODIOS</a>
+        </section>
+        <footer class="footer">
+            <p class="footer_text">© 2019— Hello blue pale dot</p>
+            <div class="footer_icons">
+                <a href="https://www.acamica.com"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+                <a href="https://www.acamica.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.acamica.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.acamica.com"> <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://www.acamica.com"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

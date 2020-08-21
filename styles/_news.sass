@@ -1,0 +1,47 @@
+.news
+    width: 100vw
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%)
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%)
+    margin-top: -5vw
+    overflow: hidden
+    .news_title
+        margin-top: 20vw
+        margin-bottom: 10vw
+        color: white
+        width: 70vw
+        font-size: 11vw
+        text-align: center
+    .news_button
+        display: flex
+        justify-content: center
+        align-items: center
+        font-family: 'IBM Plex Mono', monospace
+        text-decoration: none
+        background-color: #00F3BB
+        color: #060A24
+        font-weight: 500
+        width: 90vw
+        height: 16vw
+        font-size: 5vw
+        margin-bottom: 15vw
+@media screen and ( min-width: 768px )
+    .news
+        margin-top: 0
+        clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%)
+        .news_title
+            margin-top: 12vw
+            margin-bottom: 3vw
+            font-size: 3vw
+        .news_button
+            width: 23vw
+            height: 3.5vw
+            font-size: 1.2vw
+            margin-bottom: 12vw
+        .news_button:hover 
+            color: white
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%)
+    

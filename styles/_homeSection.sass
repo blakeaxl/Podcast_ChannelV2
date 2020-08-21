@@ -1,0 +1,64 @@
+.home
+    width: 87vw
+    position: relative
+    top: 18vw
+    .home_title
+        font-size: 11vw
+        letter-spacing: 0
+        line-height: 13vw
+        width: 70vw
+        margin-bottom: 4vw
+        color: #060A24
+        span
+            font-size: 11vw
+            letter-spacing: 0
+            line-height: 13vw
+            text-decoration-line: line-through
+            color: #060A24
+    .home_text
+        font-size: 4.3vw
+        line-height: 7vw
+        width: 90vw
+        font-family: 'IBM Plex Mono', monospace
+        margin-bottom: 10vw
+    .home_button
+        width: 90vw
+        height: 15vw
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: #00F3BB
+        text-decoration: none
+        font-size: 5vw
+@media screen and ( min-width: 768px )
+    .home
+        top: 0
+        .home_title
+            height: 9.5vw
+            font-size: 4.8vw
+            margin-bottom: 0
+            margin-left: 6vw 
+            span
+                font-size: 4.8vw
+        .home_text
+            font-size: 1.2vw
+            width: 47vw
+            line-height: 1.8vw
+            margin-left: 6vw 
+            margin-bottom: 0
+            visibility: hidden
+        .home_text:before
+            content: 'El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.'
+            visibility: visible
+        .home_button
+            width: 15vw
+            height: 3.8vw
+            font-size: 1.2vw
+            font-weight: 600
+            margin-left: 6vw
+        .home_button:hover 
+            color: white
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%)
+    
+
+    

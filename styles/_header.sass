@@ -1,0 +1,100 @@
+.header
+    width: 95vw
+    height: 7vw
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .header_logo
+        margin-left: 2.5vw
+        margin-top: 7vw
+        width: 8vw
+        height: 8vw
+    .hamburger_menu_container
+        width: 6vw
+        height: 3.5vw
+        position: relative
+        margin-right: 3vw
+        margin-top: 6vw
+        .hamburger_menu_line
+            background-color: black
+            width: 100%
+            height: 0.8vw
+            position: absolute
+            border-radius: 1vw
+            transition: 0.3s ease
+        .laneA
+            top: 0
+        .laneB
+            top: 50%
+        .laneC
+            top: 100%
+    .hamburguer_checkbox
+        position: absolute
+        width: 8vw
+        height: 8vw
+        right: 4vw
+        top: 2.8vw
+        z-index: 1
+        opacity: 0
+    .hamburguer_checkbox:checked ~ .hamburger_menu_container .laneA
+        top: 50%
+        transform: rotate(45deg)
+    .hamburguer_checkbox:checked ~ .hamburger_menu_container .laneB
+        opacity: 0
+    .hamburguer_checkbox:checked ~ .hamburger_menu_container .laneC
+        top: 50%
+        transform: rotate(-45deg)
+    .header_nav_menu
+        position: absolute
+        top: 13vw
+        left: 0
+        width: 0
+        overflow: hidden
+        transition: 0.3s cubic-bezier(.5,.64,.9,.57)
+        background-color: #0000EC
+        z-index: 1
+        .menu_list
+            li
+                list-style-type: none
+                margin-left: 4vw
+                margin-bottom: 9.5vw
+            .list_item
+                text-decoration: none
+                color: white
+                font-size: 5vw
+                font-family: 'IBM Plex Mono', monospace
+        .menu_list:first-child
+            margin-top: 6vw
+    .hamburguer_checkbox:checked ~ .header_nav_menu
+        width: 100vw
+.header_desktop
+    display: none
+@media screen and ( min-width: 768px )
+    .header
+        display: none
+    .header_desktop
+        display: flex
+        width: 85vw
+        height: 5.5vw
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 8vw
+        .desktop_header_logo
+            width: 2.5vw
+            height: 2.5vw
+        .desktop_menu_list
+            list-style-type: none
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 30vw
+            .desktop_list_item
+                text-decoration: none
+                font-size: 1.1vw
+            .desktop_list_item:hover
+                color: #00F3BB
+                text-decoration-line: line-through
+            .desktop_list_item:active
+                color: rgba(6, 10, 36, 0.56)
+                opacity: 0.5
+                text-decoration-line: line-through

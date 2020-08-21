@@ -1,0 +1,42 @@
+.we
+    position: relative
+    top: -35vw
+    width: 100vw
+    display: flex
+    flex-direction: column
+    justify-content: center
+    overflow: hidden
+    .we_phone
+        width: 100vw
+    .we_title
+        width: 60vw
+        font-size: 10vw
+        line-height: 11.5vw
+        margin-left: 6vw
+    .we_text
+        width: 90vw
+        margin: 6vw
+        font-family: 'IBM Plex Mono', monospace
+        font-size: 4.3vw
+@media screen and ( min-width: 768px )
+    .we
+        top: -12vw
+        display: grid
+        grid-template-columns: 20vw 40vw 40vw 10vw
+        grid-template-rows: 13vw 42px 1fr
+        
+        .we_phone
+            width: 30vw
+            height: auto
+            margin: 0
+            grid-area: 1/2/6/3
+        .we_title
+            font-size: 3vw
+            height: 2vw
+            margin: 0
+            grid-area: 2/3/3/5
+        .we_text
+            font-size: 1.1vw
+            width: 31vw
+            grid-area: 3/3/5/4
+            margin-left: 0

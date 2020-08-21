@@ -1,0 +1,52 @@
+.topics
+    width: 100vw
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin-top: 10vw
+    .topics_title
+        width: 100vw
+        font-size: 11vw
+        margin-left: 6vw
+        margin-bottom: 10vw
+    .topics_container
+        display: flex   
+        flex-direction: column  
+        align-items: center 
+        text-align: center
+        margin-bottom: 20vw
+        img
+            width: 35vw
+        .topics_container_text
+            font-size: 7.5vw
+            font-weight: 600
+            margin-top: 4vw
+@media screen and ( min-width: 768px )
+    .topics
+        margin-top: 4vw
+        display: grid
+        grid-template-columns: 1fr repeat(4, 18.05556vw) 1fr
+        grid-template-rows: 64px 62px 69px 197px 34px
+        .topics_title
+            font-size: 3.7vw
+            grid-area: 2/2/3/6
+            margin-left: 0
+        .topics_container
+            img
+                width: 10vw
+            .topics_container_text
+                font-size: 1.4vw
+                margin-top: 1.3vw
+                width: 13vw
+        .topics_container:nth-child(2)
+            grid-area: 4/2/5/3
+
+        .topics_container:nth-child(3)
+            grid-area: 4/3/5/4
+
+        .topics_container:nth-child(4)
+            grid-area: 4/4/5/5
+
+        .topics_container:last-child
+            grid-area: 4/5/5/6 
+        
